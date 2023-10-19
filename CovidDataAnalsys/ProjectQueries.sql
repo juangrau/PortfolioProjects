@@ -1,3 +1,97 @@
+/*
+	Creating the database
+*/
+
+create database PortfolioProject
+
+/*
+	Creating the tables
+*/
+
+CREATE TABLE [dbo].[CovidVaccinations](
+	[iso_code] [varchar](50) NULL,
+	[continent] [varchar](50) NULL,
+	[location] [varchar](50) NULL,
+	[date] [datetime] NULL,
+	[total_tests] [varchar](50) NULL,
+	[new_tests] [varchar](50) NULL,
+	[total_tests_per_thousand] [varchar](50) NULL,
+	[new_tests_per_thousand] [varchar](50) NULL,
+	[new_tests_smoothed] [varchar](50) NULL,
+	[new_tests_smoothed_per_thousand] [varchar](50) NULL,
+	[positive_rate] [varchar](50) NULL,
+	[tests_per_case] [varchar](50) NULL,
+	[tests_units] [varchar](50) NULL,
+	[total_vaccinations] [varchar](50) NULL,
+	[people_vaccinated] [varchar](50) NULL,
+	[people_fully_vaccinated] [varchar](50) NULL,
+	[total_boosters] [varchar](50) NULL,
+	[new_vaccinations] [varchar](50) NULL,
+	[new_vaccinations_smoothed] [varchar](50) NULL,
+	[total_vaccinations_per_hundred] [varchar](50) NULL,
+	[people_vaccinated_per_hundred] [varchar](50) NULL,
+	[people_fully_vaccinated_per_hundred] [varchar](50) NULL,
+	[total_boosters_per_hundred] [varchar](50) NULL,
+	[new_vaccinations_smoothed_per_million] [varchar](50) NULL,
+	[new_people_vaccinated_smoothed] [varchar](50) NULL,
+	[new_people_vaccinated_smoothed_per_hundred] [varchar](50) NULL,
+	[stringency_index] [varchar](50) NULL,
+	[population_density] [varchar](50) NULL,
+	[median_age] [varchar](50) NULL,
+	[aged_65_older] [varchar](50) NULL,
+	[aged_70_older] [varchar](50) NULL,
+	[gdp_per_capita] [varchar](50) NULL,
+	[extreme_poverty] [varchar](50) NULL,
+	[cardiovasc_death_rate] [varchar](50) NULL,
+	[diabetes_prevalence] [varchar](50) NULL,
+	[female_smokers] [varchar](50) NULL,
+	[male_smokers] [varchar](50) NULL,
+	[handwashing_facilities] [varchar](50) NULL,
+	[hospital_beds_per_thousand] [varchar](50) NULL,
+	[life_expectancy] [varchar](50) NULL,
+	[human_development_index] [varchar](50) NULL,
+	[population] [varchar](50) NULL,
+	[excess_mortality_cumulative_absolute] [varchar](50) NULL,
+	[excess_mortality_cumulative] [varchar](50) NULL,
+	[excess_mortality] [varchar](50) NULL,
+	[excess_mortality_cumulative_per_million] [varchar](50) NULL
+)
+
+CREATE TABLE [dbo].[CovidDeaths](
+	[iso_code] [varchar](50) NULL,
+	[continent] [varchar](50) NULL,
+	[location] [varchar](50) NULL,
+	[date] [datetime] NULL,
+	[population] [varchar](50) NULL,
+	[total_cases] [varchar](50) NULL,
+	[new_cases] [varchar](50) NULL,
+	[new_cases_smoothed] [varchar](50) NULL,
+	[total_deaths] [varchar](50) NULL,
+	[new_deaths] [varchar](50) NULL,
+	[new_deaths_smoothed] [varchar](50) NULL,
+	[total_cases_per_million] [varchar](50) NULL,
+	[new_cases_per_million] [varchar](50) NULL,
+	[new_cases_smoothed_per_million] [varchar](50) NULL,
+	[total_deaths_per_million] [varchar](50) NULL,
+	[new_deaths_per_million] [varchar](50) NULL,
+	[new_deaths_smoothed_per_million] [varchar](50) NULL,
+	[reproduction_rate] [varchar](50) NULL,
+	[icu_patients] [varchar](50) NULL,
+	[icu_patients_per_million] [varchar](50) NULL,
+	[hosp_patients] [varchar](50) NULL,
+	[hosp_patients_per_million] [varchar](50) NULL,
+	[weekly_icu_admissions] [varchar](50) NULL,
+	[weekly_icu_admissions_per_million] [varchar](50) NULL,
+	[weekly_hosp_admissions] [varchar](50) NULL,
+	[weekly_hosp_admissions_per_million] [varchar](50) NULL
+)
+
+/*
+	The data was loaded using the tool
+	Microsoft SQL Server Management Studio
+*/
+
+
 use PortfolioProject
 
 select *
