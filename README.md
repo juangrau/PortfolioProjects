@@ -1,2 +1,2 @@
 # PortfolioProjects
-Different portfolio projects around Data Analysis
+Portfolio projects around Data Analysis
